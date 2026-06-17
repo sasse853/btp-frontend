@@ -79,12 +79,6 @@ export default function Login() {
               {statut === 'loading' ? 'Connexion…' : 'Se connecter'}
             </button>
           </form>
-
-          <div className="mt-5 rounded-lg bg-slate-50 p-3 text-xs text-slate-500">
-            <p className="mb-1 font-semibold text-slate-600">Comptes de démonstration</p>
-            <p>Admin : admin@btp.com / password</p>
-            <p>Chef de chantier : chef@btp.com / password</p>
-          </div>
         </div>
       </div>
     </div>
