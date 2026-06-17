@@ -3,6 +3,7 @@ import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useNotifications } from '../hooks/useNotifications';
 import { dateHeure } from '../utils/format';
+import logoHorizontal from '../assets/logo/logo-horizontal.png';
 
 const LIENS = {
   admin: [
@@ -102,12 +103,8 @@ export default function Layout() {
           ouvert ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="flex h-16 items-center gap-2 border-b border-slate-800 px-5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">B</div>
-          <div className="leading-tight">
-            <p className="text-sm font-bold text-white">BTP MASTER PRO</p>
-            <p className="text-[10px] text-slate-400">MS-GROUP AFRIQUE</p>
-          </div>
+        <div className="flex h-16 items-center border-b border-slate-800 px-5">
+          <img src={logoHorizontal} alt="K.Mazar Groupe" className="h-9 w-auto" />
         </div>
         <nav className="space-y-1 p-3">
           {liens.map((lien) => (

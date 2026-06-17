@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { connexion, selectEstAuthentifie, selectRole } from '../../store/authSlice';
+import logoLogin from '../../assets/logo/logo-login-argente.png';
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -37,9 +38,7 @@ export default function Login() {
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-brand-900 p-4">
       <div className="w-full max-w-md">
         <div className="mb-6 text-center">
-          <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-600 text-2xl font-extrabold text-white shadow-lg">
-            B
-          </div>
+          <img src={logoLogin} alt="K.Mazar Groupe" className="mx-auto mb-3 h-28 w-28 rounded-2xl shadow-lg" />
           <h1 className="text-2xl font-bold text-white">BTP MASTER PRO</h1>
           <p className="text-sm text-slate-300">MS-GROUP AFRIQUE — Gestion de chantiers</p>
         </div>
