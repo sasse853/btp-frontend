@@ -39,8 +39,8 @@ export default function Login() {
       <div className="w-full max-w-md">
         <div className="mb-6 text-center">
           <img src={logoLogin} alt="K.Mazar Groupe" className="mx-auto mb-3 h-28 w-28 rounded-2xl shadow-lg" />
-          <h1 className="text-2xl font-bold text-white">BTP MASTER PRO</h1>
-          <p className="text-sm text-slate-300">MS-GROUP AFRIQUE — Gestion de chantiers</p>
+          <h1 className="text-2xl font-bold text-white">K.MAZAR GROUPE</h1>
+          <p className="text-sm text-slate-300">Application de gestion de chantiers</p>
         </div>
 
         <div className="card p-6">
